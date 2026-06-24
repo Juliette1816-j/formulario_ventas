@@ -1,15 +1,21 @@
-<form action="/venta" method="POST">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login POS</title>
+</head>
+<body>
 
-    <label>Producto</label>
-    <select name="producto">
-        {% for p in productos %}
-            <option value="{{ p[2] }}">
-                {{ p[2] }} - Stock: {{ p[5] }}
-            </option>
-        {% endfor %}
-    </select>
+<h2>Ingreso POS</h2>
 
-    <input name="cantidad" type="number" placeholder="Cantidad" required>
+<input type="email" id="email" placeholder="Correo">
 
-    <button type="submit">Vender</button>
-</form>
+<input type="password" id="password" placeholder="Contraseña">
+
+<button id="btnLogin">
+Ingresar
+</button>
+
+<script type="module" src="js/login.js"></script>
+
+</body>
+</html>
