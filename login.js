@@ -1,4 +1,4 @@
-import { supabase } from './supabase.js'
+import { supabase } from './Conexion_DB.js'
 
 document
 .getElementById('btnLogin')
