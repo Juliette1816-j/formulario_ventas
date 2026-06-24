@@ -1,0 +1,15 @@
+<form action="/venta" method="POST">
+
+    <label>Producto</label>
+    <select name="producto">
+        {% for p in productos %}
+            <option value="{{ p[2] }}">
+                {{ p[2] }} - Stock: {{ p[5] }}
+            </option>
+        {% endfor %}
+    </select>
+
+    <input name="cantidad" type="number" placeholder="Cantidad" required>
+
+    <button type="submit">Vender</button>
+</form>
